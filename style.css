@@ -1,0 +1,286 @@
+/* General Styles for the Website */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('images/materials.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(44, 62, 80, 0.9); /* Deep Blue with opacity */
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f39c12; /* Gold */
+}
+
+.menu-toggle {
+    display: none; /* Hide menu toggle button if not needed */
+}
+
+/* Home Section Styling */
+.home-section {
+    border-radius: 8px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Products Section Styling */
+.products-section {
+    background: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    display: block;
+    background-color: #f5f5f5;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.product-name:hover {
+    background-color: #e0e0e0;
+}
+
+.product-details {
+    display: none;
+    padding: 15px;
+}
+
+.product-image {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.buy-button:hover {
+    background-color: #34495e;
+}
+
+/* About Section Styling */
+.about-section {
+    background: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+/* Login Section Styling */
+.login-section {
+    background: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #34495e;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-contact {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f39c12; /* Gold */
+}
+
+
+/* Opening Hours Section Styling */
+.opening-hours-section {
+    background: rgba(44, 62, 80, 0.9);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.hours-details {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.opening-hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.opening-hours-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.opening-hours-list li:last-child {
+    border-bottom: none;
+}
