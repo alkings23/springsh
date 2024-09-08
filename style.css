@@ -1,24 +1,23 @@
 /* General Styles for the Website */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background: url('images/materials.png') no-repeat center center fixed;
     background-size: cover;
-    color: #333;
 }
 
 /* Header Styling */
 header {
-    background-color: rgba(44, 62, 80, 0.9); /* Deep Blue with opacity */
+    background-color: rgba(44, 62, 80, 0.9);
     color: #ffffff;
-    padding: 20px 0;
+    padding: 10px 0; /* Reduced padding */
 }
 
 header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 20px; /* Smaller font size */
     text-align: center;
 }
 
@@ -26,49 +25,44 @@ header h1 {
     list-style: none;
     padding: 0;
     text-align: center;
-    margin-top: 10px;
+    margin: 0; /* Removed extra margin */
 }
 
 .nav-menu li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px; /* Reduced margin */
 }
 
 .nav-link {
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #f39c12; /* Gold */
+    font-size: 14px; /* Smaller font size */
 }
 
 .menu-toggle {
-    display: none; /* Hide menu toggle button if not needed */
+    display: none;
 }
 
 /* Home Section Styling */
 .home-section {
     border-radius: 8px;
-    padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.8);
-    margin-bottom: 40px;
-    text-align: center;
+    padding: 20px 10px; /* Reduced padding */
+    background: rgba(255, 255, 255, 0.85);
+    margin-bottom: 10px; /* Less margin below */
 }
 
 .section-container {
-    max-width: 1200px;
+    max-width: 1000px; /* Smaller width */
     margin: 0 auto;
+    padding: 0 10px; /* Reduced padding */
 }
 
 /* Products Section Styling */
 .products-section {
-    background: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
-    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px 10px; /* Reduced padding */
     border-radius: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 10px; /* Less margin below */
 }
 
 .product-list {
@@ -80,148 +74,116 @@ header h1 {
 .product-item {
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced margin */
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-name {
     display: block;
     background-color: #f5f5f5;
-    padding: 15px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 16px; /* Smaller font size */
     text-align: center;
     border: none;
     cursor: pointer;
     width: 100%;
-    transition: background-color 0.3s ease;
-}
-
-.product-name:hover {
-    background-color: #e0e0e0;
 }
 
 .product-details {
     display: none;
-    padding: 15px;
+    padding: 10px; /* Reduced padding */
+}
+
+.product-item img {
+    display: none; /* Hide all images by default */
 }
 
 .product-image {
     width: 100%;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduced margin */
 }
 
 .buy-button {
     background-color: #2c3e50;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Smaller padding */
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px; /* Smaller font size */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: block;
-    width: 100%;
-    margin-top: 10px;
 }
 
 .buy-button:hover {
     background-color: #34495e;
 }
 
-/* About Section Styling */
-.about-section {
-    background: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
-    padding: 40px 20px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-/* Login Section Styling */
-.login-section {
-    background: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
-    padding: 40px 20px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-.login-container {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.login-container h2 {
-    font-size: 24px;
-    color: #2c3e50;
-    margin-bottom: 20px;
+/* Opening Hours Section Styling */
+.opening-hours-section {
+    background: rgba(44, 62, 80, 0.9);
+    color: #ffffff;
+    padding: 20px 10px; /* Reduced padding */
     text-align: center;
+    border-radius: 8px;
+    margin: 10px auto; /* Reduced margin */
+    max-width: 400px; /* Smaller width */
 }
 
-.form-group {
-    margin-bottom: 15px;
+.hours-details {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px;
+}
+
+.opening-hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px; /* Smaller font size */
     text-align: left;
 }
 
-.form-group label {
-    display: block;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 5px;
+.opening-hours-list li {
+    padding: 4px 0; /* Reduced padding */
+    border-bottom: 1px solid #ddd;
 }
 
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+.opening-hours-list li:last-child {
+    border-bottom: none;
 }
 
-.submit-button {
-    background-color: #2c3e50;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block;
-    width: 100%;
-}
-
-.submit-button:hover {
-    background-color: #34495e;
+/* About Section Styling */
+.about-section {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px 10px; /* Reduced padding */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
 /* Footer Styling */
 footer {
     background-color: #2c3e50;
     color: #ffffff;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     text-align: center;
+    font-size: 14px; /* Smaller font size */
 }
 
 .footer-contact {
     background-color: #ffffff;
     color: #333;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin: 20px auto;
-    max-width: 600px;
+    margin: 15px auto; /* Reduced margin */
+    max-width: 400px; /* Smaller width */
     text-align: left;
 }
 
 .footer-contact h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 16px; /* Smaller font size */
+    margin-bottom: 8px; /* Reduced margin */
 }
 
 .footer-contact ul {
@@ -231,56 +193,163 @@ footer {
 }
 
 .footer-contact li {
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced margin */
 }
 
 .social-icons {
-    margin-top: 10px;
+    margin-top: 5px; /* Reduced margin */
 }
 
 .social-icon {
     text-decoration: none;
     color: #2c3e50;
-    font-size: 20px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+    font-size: 16px; /* Smaller font size */
+    margin: 0 5px; /* Reduced margin */
 }
 
 .social-icon:hover {
-    color: #f39c12; /* Gold */
+    color: #34495e;
 }
 
-
-/* Opening Hours Section Styling */
-.opening-hours-section {
-    background: rgba(44, 62, 80, 0.9);
-    color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
+/* Login Section Styling */
+.login-section {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px 10px; /* Reduced padding */
     border-radius: 8px;
-    margin: 20px auto;
-    max-width: 600px;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
-.hours-details {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+.login-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    padding: 15px; /* Reduced padding */
+    max-width: 300px; /* Smaller width */
+    margin: 0 auto;
 }
 
-.opening-hours-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
+.login-container h2 {
+    font-size: 20px; /* Smaller font size */
+    color: #2c3e50;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reduced margin */
     text-align: left;
 }
 
-.opening-hours-list li {
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
+.form-group label {
+    display: block;
+    font-size: 12px; /* Smaller font size */
+    color: #333;
+    margin-bottom: 4px; /* Reduced margin */
 }
 
-.opening-hours-list li:last-child {
-    border-bottom: none;
+.form-group input {
+    width: 100%;
+    padding: 8px; /* Smaller padding */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
+
+.submit-button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px; /* Smaller padding */
+    border-radius: 4px;
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #34495e;
+}
+
+
+/* General Styles for the Website */
+/* ... existing styles ... */
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.confirm-button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+    background-color: #34495e;
+}
+
+
+/* Login Message Styling */
+.login-message {
+    margin-top: 10px;
+    color: #e74c3c; /* Red for error */
+    font-size: 14px;
+}
+
+/* Success Message Styling */
+.login-message.success {
+    color: #2ecc71; /* Green for success */
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Success and error messages */
+.login-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-message.success {
+    color: green;
+}
+
+.login-message.error {
+    color: red;
+}
+

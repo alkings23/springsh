@@ -248,13 +248,92 @@
     </div>
 </section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meriba Springs Hardware</title>
+    <meta name="description" content="Meriba Springs Hardware offers top-quality construction materials and exceptional service. Explore our range of products and get everything you need for your next project.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="main-header">
+        <div class="header-overlay">
+            <div class="header-container">
+                <div class="header-content">
+                    <h1>Welcome to Meriba Springs Hardware</h1>
+                    <nav>
+                        <ul id="nav-menu" class="nav-menu">
+                            <li><a href="#home" class="nav-link">Home</a></li>
+                            <li><a href="#products" class="nav-link" id="products-tab">Our Products</a></li>
+                            <li><a href="#about" class="nav-link">About</a></li>
+                            <li><a href="#contact" class="nav-link">Contact</a></li>
+                            <li><a href="#login" class="nav-link">Login</a></li>
+                        </ul>
+                        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
             <div class="section-container">
-                <h2>About Us</h2>
-                <p>Meriba Springs Hardware has been serving the community with high-quality construction materials and tools for over a decade. Our commitment to excellence and customer satisfaction drives us to provide the best products and services.</p>
+                <h2>Welcome to Meriba Springs Hardware</h2>
+                <p>At Meriba Springs Hardware, we provide top-quality construction materials and exceptional service. Explore our range of products and find everything you need for your next project.</p>
             </div>
         </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section">
+            <div class="section-container">
+                <h2>Our Products</h2>
+                <ul class="product-list">
+                    <!-- Example Product Items -->
+                    <li class="product-item">
+                        <button class="product-name" aria-expanded="false">Heavy-Duty Hammer</button>
+                        <div class="product-details">
+                            <img src="images/hammer.jpg" alt="Heavy-duty hammer for construction" class="product-image" loading="lazy">
+                            <p>Durable hammer perfect for heavy-duty tasks.</p>
+                            <p><strong>Price:</strong> Kshs 350</p>
+                            <button class="buy-button" aria-label="Buy Heavy-Duty Hammer" data-price="350">Buy Now</button>
+                        </div>
+                    </li>
+                    <!-- More product items here... -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Buy Modal -->
+        <div id="buy-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-modal">&times;</span>
+                <h2>Buy Product</h2>
+                <form id="buy-form">
+                    <label for="quantity">Enter Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <p id="total-price">Total Price: Kshs 0</p>
+                    <button type="submit" class="confirm-button">Confirm Purchase</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Other Sections -->
+        <!-- About, Contact, Login, etc. -->
+
+        <script src="scripts.js"></script>
+    </main>
+</body>
+</html>
+
+
+        
 
         <!-- Opening Hours Section -->
 <section id="opening-hours" class="opening-hours-section">
@@ -271,6 +350,15 @@
                 <li><strong>Sunday:</strong>    CLOSED</li>
             </ul>
         </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="section-container">
+        <h2>About Us</h2>
+        <p>Meriba Springs Hardware has been serving the community with high-quality construction materials and tools for over a decade. Our commitment to excellence and customer satisfaction drives us to provide the best products and services.</p>
     </div>
 </section>
 
@@ -297,22 +385,30 @@
         </footer>
 
         <!-- Login Section -->
-        <section id="login" class="login-section">
-            <div class="login-container">
-                <h2>Login</h2>
-                <form id="login-form" action="/login" method="POST" aria-labelledby="login-heading">
-                    <div class="form-group">
-                        <label for="username" aria-required="true">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" aria-required="true">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                    </div>
-                    <button type="submit" class="submit-button">Login</button>
-                </form>
+<section id="login" class="login-section">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form" method="POST" aria-labelledby="login-heading">
+            <div class="form-group">
+                <label for="username" aria-required="true">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
             </div>
-        </section>
+
+            <div class="form-group">
+                <label for="password" aria-required="true">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="submit-button">Login</button>
+        </form>
+        <p id="login-message" class="login-message"></p>
+    </div>
+</section>
+
+
+
+
+        
     </main>
 
     <script src="scripts.js"></script>
